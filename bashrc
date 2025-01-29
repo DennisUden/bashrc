@@ -114,3 +114,4 @@ fi
 
 alias calc=qalc
 alias imv=imv-x11
+alias pdf=zathura
