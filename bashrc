@@ -116,3 +116,4 @@ alias calc=qalc
 alias image=imv-x11
 alias video=mpv
 alias pdf=zathura
+alias scan="scanimage -d airscan --format=png > scan.png"
