@@ -113,5 +113,6 @@ if ! shopt -oq posix; then
 fi
 
 alias calc=qalc
-alias imv=imv-x11
+alias image=imv-x11
+alias video=mpv
 alias pdf=zathura
