@@ -30,7 +30,11 @@ if platform.system() == "Linux":
         subprocess.run([f"echo moving directory from {currDir} to {repoParDir}/{name}"], shell=True)
         subprocess.run([f"mv {currDir} {repoParDir}/{name}"], shell=True)
 
-    # create the symlink    
+    # remove old .bashrc
+    subprocess.run([f"removing old .{name}"], shell=True)
+    subprocess.run([f"rm {symParDir}/.{name}"], shell=True)
+
+    # create the symlink
     pathSym = subprocess.run([f"echo {symParDir}/{name}"], shell=True, capture_output=True, text=True).stdout.strip()
     if os.path.islink(pathSym) == False:
         subprocess.run([f"echo creating symlink for {repoParDir}/{name}/{name} {symParDir}/.{name}"], shell=True)
