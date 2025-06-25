@@ -121,5 +121,5 @@ alias pdf=zathura
 alias scan="scanimage -d airscan --format=png > scan.png"
 alias ocr=gimagereader-gtk
 alias xclip="xclip -se c"
-alias shutdown="systemctl poweroff now"
+alias shutdown="systemctl poweroff"
 alias reboot="systemctl reboot"
