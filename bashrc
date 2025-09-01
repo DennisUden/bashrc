@@ -113,6 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/Programs/intellij-idea/bin
 
 alias calc=qalc
 alias image=imv-x11
